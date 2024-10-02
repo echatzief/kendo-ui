@@ -2,7 +2,7 @@ import { useState } from 'react';
 import { useLocation, useNavigate, Outlet } from 'react-router-dom';
 import { Drawer, DrawerContent } from '@progress/kendo-react-layout';
 import { Button } from '@progress/kendo-react-buttons';
-import { menuIcon, gridIcon, globeIcon, gearIcon } from '@progress/kendo-svg-icons';
+import { menuIcon, gridIcon, globeIcon, gearIcon, mapMarkerIcon } from '@progress/kendo-svg-icons';
 import AvatarIcon from '@/assets/avatar.png'
 
 export const items = [
@@ -18,6 +18,13 @@ export const items = [
     selected: false,
     route: '/performance',
     svgIcon: globeIcon
+  },
+  { separator: true },
+  {
+    text: 'Floor Plan',
+    selected: false,
+    route: '/floor-plan',
+    svgIcon: mapMarkerIcon
   },
   { separator: true },
   {
@@ -70,7 +77,10 @@ const DrawerContainer = (props: any) => {
           onSelect={onSelect}
           className="drawer"
         >
-          <DrawerContent>{props.children}<Outlet /> </DrawerContent>
+          <DrawerContent style={{ height: '100vh' }}>
+            {props.children}
+            <Outlet /> 
+          </DrawerContent>
         </Drawer>
       </div>
     </div>

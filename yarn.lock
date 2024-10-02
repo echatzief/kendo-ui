@@ -442,6 +442,13 @@
   dependencies:
     prop-types "^15.6.0"
 
+"@progress/kendo-react-tooltip@^8.3.0":
+  version "8.3.0"
+  resolved "https://registry.yarnpkg.com/@progress/kendo-react-tooltip/-/kendo-react-tooltip-8.3.0.tgz#7d0439bcadbb09ee11c40dc55615a8a20d085a88"
+  integrity sha512-KItZ4EnF1D2Y27nIgZQ7OgqG4OTgAYLzp3XkZZ5eX5UJNYSbtDCQczu2fSShPIQcTFMpnRWmzFUkUzrOsso2ug==
+  dependencies:
+    prop-types "^15.6.0"
+
 "@progress/kendo-react-treeview@^8.3.0":
   version "8.3.0"
   resolved "https://registry.yarnpkg.com/@progress/kendo-react-treeview/-/kendo-react-treeview-8.3.0.tgz#a07fdffb4fbb88017098c33397630b80d19693e5"
